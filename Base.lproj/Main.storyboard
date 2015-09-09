@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DMB-14-ajy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRc-0s-HRl">
+                                <rect key="frame" x="126" y="269" width="69" height="30"/>
+                                <state key="normal" title="哎呦 Push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3nr-O1-T7W" kind="push" id="fhD-Kf-oSl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="WRc-0s-HRl" secondAttribute="centerY" id="QPT-YD-AXj"/>
+                            <constraint firstAttribute="centerX" secondItem="WRc-0s-HRl" secondAttribute="centerX" id="kQf-aq-iVv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ig9-bb-jWH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525.33333333333337" y="-337.01333333333332"/>
+        </scene>
+        <!--Push View Controller-->
+        <scene sceneID="dXi-Cg-D7e">
+            <objects>
+                <viewController id="3nr-O1-T7W" customClass="PushViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MEW-uX-gQ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ag-rY-9BY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pha-HW-64O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUj-hq-Y1d">
+                                <rect key="frame" x="126" y="269" width="69" height="30"/>
+                                <state key="normal" title="哎呦 Push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3nr-O1-T7W" kind="push" id="hx3-iQ-1Ha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="RUj-hq-Y1d" secondAttribute="centerY" id="oRn-Xe-gNj"/>
+                            <constraint firstAttribute="centerX" secondItem="RUj-hq-Y1d" secondAttribute="centerX" id="qlD-Ij-KbP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kbn-8n-BHQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPo-LO-avE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="-338"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eE5-Sb-RHr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DMB-14-ajy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8V-ym-2b2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="yo9-mR-r6i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tsw-ND-0qU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.466666666666669" y="-337.01333333333332"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="fhD-Kf-oSl"/>
+    </inferredMetricsTieBreakers>
+</document>
